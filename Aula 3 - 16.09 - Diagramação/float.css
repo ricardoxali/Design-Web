@@ -1,0 +1,19 @@
+figure {
+    float: right;
+    /* atributo que permite o elemento flutuar para o lado esquerdo ou direito */
+}
+
+div.outrospercursos {
+    float: left;
+    border: 2px solid black;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+footer {
+    background-color: darkseagreen;
+    padding: 1rem;
+    text-align: center;
+    clear: both;
+    /* clear limpa os elementos flutuantes, ficando abaixo deles, em que "both" limpa tanto a esquerda quanto a direita */
+}

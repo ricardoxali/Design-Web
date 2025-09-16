@@ -1,0 +1,35 @@
+header, footer {
+    /* a vírgula representa um agrupamento de seletores */
+    background-color: lightblue;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    /* permite que os elementos fiquem um ao lado do outro */
+    flex-wrap: wrap;
+    /* quebra de linha no flex */
+    justify-content: center;
+    /* distribuição dos elementos no espaço */
+    gap: 1rem;
+    /* espaçamento entre elementos similar ao margin */
+}
+
+main > section {
+    /* o maior que seleciona o elemento diretamento filho de outro elemento */
+    width: 20rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    /* bordas arredondadas */
+    box-shadow: 0 0 0.3rem 0.3rem rgb(190, 190, 190);
+    /* deslocamento x, deslocamento y, tamanho, desfoque */
+    margin: 1rem 0;
+    /*
+    1 - em todos
+    2 - em cima e em baixo, a direita e a esquerda
+    3 - em cima, a direira e esquerda, em baixo
+    4 - em cima, a direita, em baixo, a esquerda
+    */
+}
