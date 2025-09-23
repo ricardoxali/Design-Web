@@ -1,0 +1,37 @@
+main{
+    max-width: 70rem;
+    margin: 1rem auto;
+    display: grid;
+    gap: 1rem;
+    /* define o espaçamento entre áreas */
+    grid-template-areas: 
+    "c c d"
+    "a b d";
+    /* todas as variáveis precisam estar na matriz, pode colocar um ponto pra ser um espaço */
+    grid-template-columns: 1fr 2fr 1fr; /* fr = fração */
+    /* define a largura da coluna */
+    /* a quantidade de valores deve ser igual a quantidade de colunas */
+    grid-template-rows: 10rem 10rem;
+    /* define a altura das linhas, mas a altura ficarará limitada */
+    /* a quantidade de valores deve ser igual a quantidade de linhas */
+}
+section{
+    border: 1px solid black;
+    padding: 1rem;
+    overflow: auto;
+    /* possibilita a barra de rolagem */
+}
+section.noticias{
+    grid-area: a;
+    /* o grid-area define a area do grid com uma variável */
+}
+section.comemoracao{
+    grid-area: b;
+    /* variável não pode começar com número, não pode ser só número, não pode haver espaço e nem caracteres especiais */
+}
+section.organizadores{
+    grid-area: c;
+}
+section.corrida{
+    grid-area: d;
+}
