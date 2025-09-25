@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header, footer, section{
+    padding: 2rem;
+    background-color: lightcyan;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.7rem;
+}
+header, footer{
+    background-color: lightskyblue;
+    text-align: center;
+}
+main{
+    margin-top: 7rem;
+}
+header{
+    position: fixed;
+    /* posiciona o elemento sobre a página (eixo z), sobrepondo os elementos da página, mas perdendo a largura (saindo de display: block; para display: inline-block;) */
+    width: 100vw;
+    top: 0;
+    /* escolhe no mínimo um e no máximo dois, sendo apenas um por eixo; top ou bottom e left ou right */
+    z-index: 1;
+}
+div#esmaecer{
+    width: 100vw;
+    /* vw - viewport width */
+    height: 100vh;
+    /* vh - viewport height */
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#modal{
+    background-color: aqua;
+    padding: 2rem;
+    width: 20rem;
+    height: 26rem;
+    position: absolute;
+    /* não se usa width e height min e max, mas sendo importante colocar width e height devido ao position */
+    z-index: 3;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px gold;
+}
+h2{
+    background-color: turquoise;
+    position: relative;
+    top: 10px;
+}
+img{
+    width: 20rem;
+}
