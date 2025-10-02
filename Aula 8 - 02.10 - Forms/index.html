@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA DE CAMPO</title>
+    <style>
+        label[for]{
+            /* seleciona apena as label que tem o atributo for */
+            /* a marcação de label não permite a definição de largura, pq ela tem um comportamento de display: inline; */
+            display: inline-block;
+            width: 12rem;
+            vertical-align: top;
+            /* deixará o rótulo alinhado horizontalmente ao topo do textarea */
+        }
+    </style>
+</head>
+<body>
+    <h1>Inscrição para aula de campo</h1>
+    <form action="dadosenviados.html">
+        <!-- o atributo de action irá receber o arquivo de programação e processará os dados -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Nome" required> <br>
+        <!-- placeholder coloca o texto dentro do campo input -->
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"> <br>
+        <label for="curso">Curso:</label>
+        <select name="curso" id="curso" multiple>
+            <!-- combobox -->
+            <!-- multiple seleciona vários (lista/tupla) usando o ctrl -->
+            <option value="infoweb" selected>INFOWEB</option>
+            <!-- select ja deixa a opção selecionada por padrão -->
+            <option value="adm">Administração</option>
+            <option value="msi">Manutenção e Suporte</option>
+            <option value="mec">Mecânica</option>
+            <option value="eletro">Eletrotécnica</option>
+            <option value="edif">Edificações</option>
+            <option value="cam">Controle Ambiental</option>
+            <option value="minera">Mineração</option>
+            <option value="geo">Geologia</option>
+        </select> <br>
+        <label><input type="radio" name="dir" value="diatinf"> DIATINF</label>
+        <label><input type="radio" name="dir" value="diacin" checked> DIACIN</label>
+        <!-- checked ja deixa a opção selecionada por padrão -->
+        <label><input type="radio" name="dir" value="diacon"> DIACON</label>
+        <label><input type="radio" name="dir" value="diaren"> DIAREN</label>
+        <!-- quando se usa type="radio" ou type="checkbox", o name tem que ser o mesmo -->
+        <br>
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" list="cidade-list"> <br>
+        <datalist id="cidade-list">
+            <!-- praticidade da redução de opções conforme o usuário vai digitando -->
+            <option value="Natal">
+            <option value="Parnamirim">
+            <option value="Macaíba">
+            <option value="Tibau">
+        </datalist>
+        <label for="obs">Observações:</label>
+        <textarea name="obs" id="obs" cols="30" rows="10" maxlength="5"></textarea> <br>
+        <!-- maxlength define a quantidade máxima de caracteres -->
+        <input type="submit" value="ENVIAR">
+    </form>
+</body>
+</html>
