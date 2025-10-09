@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+div{
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+section{
+    border: 1px solid black;
+    padding: 1rem;
+    flex-basis: 22%;
+}
+@media (max-width:1440px){
+    /* mediascreen - técnica condicional para responsividade usando css */
+    body{
+        background-color: aquamarine;
+    }
+    section{
+        flex-basis: 48%;
+    }
+}
+@media (max-width:744px){
+    body{
+        background-color: aqua;
+    }
+    section{
+        flex-basis: 98%;
+    }
+}
