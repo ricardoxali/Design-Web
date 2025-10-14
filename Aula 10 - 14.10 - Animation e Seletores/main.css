@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+:root{
+    /* definição de variáveis no elemento principal root/html */
+    --princ-tx: blue;
+    --princ-bg: cadetblue;
+}
+body{
+    background-color: aqua;
+    font-family: "Quintessential", serif;
+}
+header + section{
+    background-color: cornflowerblue;
+}
+.tx-grande.verde{
+    background-color: crimson;
+}
+section{
+    height: 20rem;
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section p{
+    animation-name: mostrar;
+    /* nome definido pelo dev */
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+    /* conta quantas vezes a animação ocorre */
+}
+@keyframes mostrar{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/*
+SELETORES:
+* [Tudo]
+.destaque [Todas as tags que tem a classe "destaque"]
+p.destaque [Tags p que têm a classe "destaque"]
+section#destaque [Tag que tem o id "destaque" e a identificando]
+#destaque [Tag que tem o id "destaque"]
+ol, ul [Ambas as tags ol e ul]
+p a [Tags a eu estão dentro do p]
+p > a [Tags a que são filhas diretas de p]
+header + section [Tag section que vem imediatamente após o header]
+.tx-grande.verde [Todas as tags que tem esses valores na class]
+p:hoover ["hoover" é uma subclasse - efeito de passar o mouse]
+li:first-child [Primeira tag li]
+tr:nth-child(int, "odd" ou "even") [Énesima tag tr]
+img[src='face.png'] [Tag img que tem o atributo src com esse valor]
+label[for] [Tags label que tem o atributo for, independente de seu valor]
+*/
