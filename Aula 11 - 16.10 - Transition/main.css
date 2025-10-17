@@ -51,7 +51,8 @@ li > a{
     text-decoration: none;
     color: black;
     filter: blur(1px);
-    transform: translateX(2rem);
+    animation-name: mostrar;
+    animation-duration: 1.5s;
 }
 header nav ul li a:hover{
     font-size: 1.25rem;
@@ -62,4 +63,14 @@ header nav ul li a:hover{
 input{
     display: flex;
     margin: 5rem auto 0 auto;
+}
+@keyframes mostrar{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
