@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <script>
+        // document.getElementById('mensagem').innerHTML = 'Testando erro'
+        // não funciona pq o DOM ainda não criou o elemento com id 'mensagem'
+    </script>
+
+    <p id="mensagem"></p>
+    
+    <script>
+        // html (conteúdo) - ling. de marcação
+        // css (estilo) - ling. de formatação
+        // javascript (interatividade) - ling. de programação
+        // javascript ≠ java
+        // javascript é sensível à cdapitulação
+        // javascript é possível usar no lado cliente, servidor, mobile e desktop
+        // DOM - Modelo de documento do objeto
+        
+        // window.confirm('Como está?')
+        // window.alert('Olá Mundo com alert');
+        // var nome = window.prompt('Qual seu nome?')
+        // console.log('Olá mundo no console: '+nome);
+        document.write('<p>Olá Mundo com document.write</p>');
+        document.getElementById('mensagem').innerHTML = 'Olá Mundo com getElementById';
+
+        // var - declaração de variável global
+        // let - declaração de variável local (ocupa menos espaço de memória)
+        // FORTEMENTE TIPADOS - precisa declarar o tipo da variável (javascript não é)
+        let str = 'infoweb';
+        let int = 2;
+        let float = 4.11;
+        let bool = true;
+
+        console.log(int+float+str);
+        console.log(2025+7);
+        console.log(2025-7);
+        console.log(2025*7);
+        console.log(2025/7);
+        console.log('inteiro: ' + int);
+        console.log('inteiro: ' + int++); // ++ significa mais 1
+        console.log('inteiro: ' + int);
+
+        console.log('igual (valor) == ');
+        console.log('diferente !=');
+        console.log('igual (valor e tipo) ==='); // '5'==5 (true); '5'===5 (false)
+        console.log('maior que >');
+        console.log('menor que <');
+        console.log('maior ou igual que >=');
+        console.log('menor ou igual que <=');
+        console.log('&& equivale ao "and" em python') // 5>=6 && 5==5 (false)
+        console.log('|| equivale ao "or" em python') // 5>=6 || 5==5 (true)
+
+        let idade = window.prompt('Qual sua idade?');
+        if(idade >= 18){
+            console.log('Maior de idade');
+        }else{
+            console.log('Menor de idade');
+        }
+    </script>
+</body>
+</html>
