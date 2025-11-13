@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELA 2</title>
+</head>
+<body>
+    <label for="senha">Senha:</label>
+    <input type="text" id="senha"> <br>
+    <label for="confirma">Confirmação de senha:</label>
+    <input type="text" id="confirma">
+    <button id="verificar">Verifica senhas</button>
+    <p id="resultado"></p>
+
+    <script>
+        let verificar = document.getElementById('verificar');
+        
+        verificar.addEventListener('click', function(e){
+            let senha1 = document.getElementById('senha').value;
+            let senha2 = document.getElementById('confirma').value;
+            if(senha1 == senha2){
+                document.getElementById('resultado').innerHTML = 'Iguais';
+            }else{
+                document.getElementById('resultado').innerHTML = 'Diferentes';
+            }
+        })
+    </script>
+</body>
+</html>
