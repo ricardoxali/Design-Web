@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COR</title>
+</head>
+<body>
+    <p id="texto">INFOWEB</p>
+    
+    <script>
+        let p = document.getElementById('texto');
+        let r = Math.floor(Math.random() * 256);
+        let g = Math.floor(Math.random() * 256);
+        let b = Math.floor(Math.random() * 256);
+        p.style.fontSize = '5rem';
+        p.style.color = `rgb(${r},${g},${b})`;
+    </script>
+</body>
+</html>

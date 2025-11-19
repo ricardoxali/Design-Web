@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXTO</title>
+</head>
+<body>
+    <input type="text" id="texto">
+    <button id="btn">Visualizar</button>
+
+    <script>
+        let btn = document.getElementById('btn');
+        
+        btn.addEventListener('click', function(e){
+            let texto = document.getElementById('texto').value;
+            for(let n = 1; n <= 5; n++){
+                document.write(`<p style='font-size: ${n}rem;'>${texto}</p>`);
+            }
+        })
+    </script>
+</body>
+</html>

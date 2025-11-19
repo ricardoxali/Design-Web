@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NÚMERO</title>
+    <style>
+        main{
+            display: flex;
+        }
+        p{
+            margin: 0 1rem;
+            font-size: 5rem;
+        }
+        button{
+            width: 5rem;
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <button id="menos">-</button>
+        <p id="num">0</p>
+        <button id="mais">+</button>
+    </main>
+    <script>
+        let menos = document.getElementById('menos');
+        let mais = document.getElementById('mais');
+        let p = document.getElementById('num');
+        let num = parseInt(p.textContent)
+        menos.addEventListener('click', function(e){
+            p.innerHTML = --num;
+        })
+        mais.addEventListener('click', function(e){
+            p.innerHTML = ++num;
+        })
+    </script>
+</body>
+</html>
