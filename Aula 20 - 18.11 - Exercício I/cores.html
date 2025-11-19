@@ -30,38 +30,41 @@
 <body>
     <main></main>
     <script>
-        let qntd = 100
-        let main = document.querySelector('main')
+        let qntd = 100;
+        let main = document.querySelector('main');
+        
         function btn_criar(a = 0){
-            let antigoadd = document.getElementById('add')
+            let antigoadd = document.getElementById('add');
             if(antigoadd != null){
-                antigoadd.remove()
+                antigoadd.remove();
             }
             if(a == 0){
                 for(let n = 0; n < qntd; n++){
                     let btn = document.createElement('button');
-                    btn.setAttribute('onclick', 'mudarcor(this.style.backgroundColor)')
+                    btn.setAttribute('onclick', 'mudarcor(this.style.backgroundColor)');
                     main.appendChild(btn);
                 }
             }else{
                 let btn = document.createElement('button');
-                btn.setAttribute('onclick', 'mudarcor(this.style.backgroundColor)')
-                btn.style.backgroundColor = a
+                btn.setAttribute('onclick', 'mudarcor(this.style.backgroundColor)');
+                btn.style.backgroundColor = a;
                 main.appendChild(btn);
             }
-            let add = document.createElement('button')
-            add.textContent = 'Adicionar'
-            add.id = 'add'
-            add.onclick = btn_maisum
+            let add = document.createElement('button');
+            add.textContent = 'Adicionar';
+            add.id = 'add';
+            add.onclick = btn_maisum;
             main.appendChild(add);
         }
+
         function btn_maisum(){
-            qntd++
+            qntd++;
             let r = Math.floor(Math.random() * 256);
             let g = Math.floor(Math.random() * 256);
             let b = Math.floor(Math.random() * 256);            
-            btn_criar(`rgb(${r},${g},${b})`)
+            btn_criar(`rgb(${r},${g},${b})`);
         }
+
         function btn_cor(){
             let btns = document.querySelectorAll('button:not(#add)');
             for(let n = 0; n < btns.length; n++){
@@ -71,13 +74,14 @@
                 btns[n].style.backgroundColor = `rgb(${r},${g},${b})`;
             }
         }
+
         function mudarcor(cor){
             document.body.style.backgroundColor = cor;
         }
+
         btn_criar();
-        btn_cor()
+        btn_cor();
         setInterval(btn_cor, 2000);
     </script>
-
 </body>
 </html>
