@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS</title>
+    <style>
+        .grande{
+            font-size: 2rem;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <ol id="alunos">
+        <li>Júlia</li>
+        <li>Eduarda</li>
+        <li>João</li>
+        <li>Maria</li>
+        <li>Juliana</li>
+    </ol>
+    <input type="text">
+    <form action="" name="cadastro">
+        <label>
+            Nome: <input type="text">
+        </label>
+        <select name="cidade" id="">
+            <option value="natal">Natal</option>
+            <option value="recife">Recife</option>
+        </select>
+        <input type="submit">
+    </form>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit consequuntur tenetur ipsam. Sint, vero delectus. Aspernatur, ratione quis dolorum expedita voluptas maxime. Numquam est recusandae impedit repudiandae culpa aperiam?</p>
+    <p>Sed, nihil officia. Dolorem soluta corrupti officia, enim voluptate sunt? Est hic voluptas, laboriosam impedit ducimus accusamus illum ullam tenetur reiciendis consequuntur! Sed maxime optio ex fuga quidem, rerum earum?</p>
+    <p>Beatae nesciunt blanditiis alias voluptatibus libero doloremque quis totam quasi commodi voluptates corporis quam, veritatis aperiam quod culpa fugiat dolorum quisquam. Facere soluta illum eos voluptatem harum aperiam assumenda excepturi.</p>
+    <p>Quibusdam, recusandae. Nam laborum dolore animi rem velit provident esse ipsam quis sit quod. Porro nihil facilis numquam assumenda iste nesciunt? Recusandae minima doloremque nesciunt numquam doloribus explicabo quia temporibus.</p>
+    <p>Ipsam consequatur voluptate dignissimos recusandae nesciunt blanditiis iure est pariatur? Voluptate aliquam quis quas. Adipisci ea ipsam, ad sunt ullam excepturi aliquid commodi? Accusantium architecto quod maiores autem, cum quas?</p>
+    <p>Temporibus assumenda, aliquam ut deserunt incidunt recusandae. Quod aperiam ab fugiat vitae voluptatibus sunt, asperiores corrupti architecto eos velit repellendus, a distinctio quidem odit maxime eveniet deleniti blanditiis veniam atque?</p>
+    <p>Omnis doloribus temporibus quas! Autem, sit, minus enim necessitatibus atque voluptates, ea quibusdam eaque hic temporibus error beatae perspiciatis? Et suscipit facilis nisi reiciendis explicabo possimus rerum magni est enim.</p>
+    <p>Vel rerum magni corrupti minus ipsum sed? Inventore alias repellendus esse sed dolores aut dolorem ducimus neque animi dignissimos dolorum rerum voluptas qui recusandae nisi, repellat illo provident quam perspiciatis.</p>
+    <p>Aut aliquid veniam saepe voluptatibus eum aperiam explicabo atque eaque inventore tempore assumenda natus harum, ratione quod accusamus maxime reiciendis id dolor ducimus minima, sed eligendi, numquam culpa veritatis? Sed!</p>
+    <p>Hic, doloremque praesentium. Vero saepe eius quam, sunt voluptatibus blanditiis maiores voluptas. Consectetur magnam doloribus maiores facere reiciendis aperiam consequatur ea. Vitae sint consequatur ducimus ex? Quis vel optio quae!</p>
+    <p>Tenetur facilis consequatur fugiat iure magni, dolore excepturi dicta eligendi temporibus cumque, nemo eum! Molestias molestiae laboriosam at est mollitia veritatis corporis vitae, sapiente iste quia quibusdam, debitis autem iusto?</p>
+    <p>Ratione distinctio neque quibusdam minus ullam quis laboriosam assumenda ipsam necessitatibus nostrum! Modi assumenda sit aut ut consectetur incidunt est voluptatum quam suscipit eum, fugiat voluptate animi eligendi possimus esse!</p>
+    <p>Labore consequuntur voluptatibus odio non accusamus doloribus, culpa minus magni explicabo, commodi aliquam expedita possimus animi praesentium? Quibusdam sed nobis repudiandae veritatis, ipsa eligendi voluptate, saepe architecto harum nostrum explicabo?</p>
+    <p>Fuga, sint minima! Commodi fugiat eaque quidem voluptatibus, ipsam aspernatur sint molestias officia alias fugit accusantium non dolores id delectus earum ducimus natus, tempora quod asperiores eos quos? Maiores, laborum!</p>
+    <p>Earum dolor beatae est optio corporis, ipsa quasi impedit itaque voluptates nisi nulla totam exercitationem, culpa assumenda consectetur, harum quia. Cumque accusamus dolor consequatur nemo reprehenderit recusandae ad dicta nulla!</p>
+    <p>Modi rerum magni cupiditate totam minima sunt fuga eligendi aliquid, numquam tenetur nulla voluptatibus necessitatibus. Alias sunt, magnam rem tempora cumque quae fugiat beatae nobis ea, aperiam dolor sed vero.</p>
+    <p>Vitae libero pariatur voluptate beatae repellat, dolores est necessitatibus? Officia veritatis odio alias minus rerum rem quisquam ullam cum iste? In debitis ex tenetur saepe earum eveniet quasi. Neque, perferendis?</p>
+    <p>Magnam earum deserunt iste quod blanditiis cumque amet sapiente eos, ea explicabo aliquid rerum repellat minus necessitatibus quas pariatur incidunt nisi culpa! Maiores iusto ad necessitatibus provident cupiditate deleniti? Iure!</p>
+    <p>Et harum voluptatibus magni similique aliquid explicabo eius repellat dolorem placeat maiores veniam ad nesciunt optio saepe, ex accusantium amet error veritatis totam possimus ducimus corrupti corporis autem! Quas, voluptatum.</p>
+    <p>Quos aut atque officia asperiores impedit omnis nisi consequatur architecto modi delectus. Eos consequuntur excepturi atque a, at, sunt neque repellendus provident sit rerum aliquam porro architecto saepe, libero numquam.</p>
+   <script>
+        const lista = document.getElementById('alunos');
+        // similar ao querySelector
+        const novoli = document.createElement('li');
+        novoli.setAttribute('class', 'grande');
+        novoli.textContent = 'NOVO ALUNO: VINÍCIUS';
+        // innerHTML posso colocar tags, textContent apenas texto.
+        lista.appendChild(novoli);
+        // lista.removeChild(novoli);
+
+        // EVENTOS DE INTERFACE
+        // load
+        // unload: acionada qnd a página é totalmente carregada
+        // error: qnd tem um erro
+        // resize: qnd a janela é redimensionada
+        // scroll: qnd a barra de rolagem é usada
+
+        const body = document.querySelector('body');
+        function eventoload(){
+            console.log('Função eventoload');
+        };
+        function eventoscroll(){
+            console.log('Função eventoscroll');
+        };
+        window.addEventListener('load', eventoload);
+        window.addEventListener('scroll', eventoscroll);
+
+        // EVENTOS DE TECLADO
+        // keydown: qnd a tecla é pressionada
+        // keyup: qnd a tecla é solta
+
+        const input = document.querySelector('input');
+        function eventokeydown(e){
+            console.log('Função eventokeydown '+e.key);
+        };
+        input.addEventListener('keydown', eventokeydown);
+
+        // EVENTOS FORMS
+
+        const form = document.cadastro;
+        // qnd o form tem atributo name
+        function eventosubmit(){
+            alert('Função eventosubmit');
+            // Foi usado alert pq a mensagem apaga, já que os dados serão submetidos
+        };
+        form.addEventListener('submit', eventosubmit);
+        const cidade = form.cidade;
+        // pega o select q tá no form com name 'cidade'
+        function eventochange(){
+            console.log('Função eventochange');
+        };
+        cidade.addEventListener('change', eventochange);
+
+        // EVENTOS DE MOUSE
+        // click, dbclick, mousedown, mouseup, mousemove, mouseover, mouseout
+
+        function eventomousemove(e){
+            const x = e.clientX;
+            const y = e.clientY;
+            console.log('Função eventomousemove: '+`(${x},${y})`);
+        };
+        window.addEventListener('mousemove', eventomousemove);
+   </script> 
+</body>
+</html>
