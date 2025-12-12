@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(113, 245, 72);
+}
+h1{
+    text-align: center;
+    color: rgb(32, 72, 248);
+    margin: 2rem 0;
+}
+p{
+    margin: 2rem auto 0 auto;
+    width: 35rem;
+    padding: 1.5rem;
+    color: rgb(245, 24, 24);
+    background-color: rgb(230, 245, 24);
+}
+div{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+button{
+    background-color: rgb(192, 245, 192);
+    margin: 0 2rem;
+    border-radius: 100%;
+    width: 7rem;
+    height: 7rem;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(231, 243, 231);
+}

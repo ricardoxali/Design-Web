@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIVIDADE</title>
+    <link rel="stylesheet" href="default.css">
+</head>
+<body>
+    <h1>ATIVIDADE</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at necessitatibus officia dolores. Quisquam, molestias libero maxime, atque hic repellendus tempore excepturi voluptates magnam nihil, quod non pariatur repellat qui.</p>
+    <p>Provident expedita, quo non necessitatibus perferendis quae veritatis maiores nobis facere ducimus libero quaerat? Aliquam excepturi ad nemo? Voluptatum, in quaerat! Rem sed non sint, numquam ex sapiente laborum deserunt?</p>
+    <p>Voluptatum autem dolores a praesentium illum, voluptas non adipisci ab sit, quas inventore quaerat harum? Adipisci accusantium placeat neque sequi facere architecto et at, dolores ratione, amet rem quisquam tenetur.</p>
+    <p>Ipsum hic soluta culpa! Sed alias modi suscipit quod voluptates officiis illum quidem sapiente ducimus! Ab, aut pariatur repellat corporis adipisci voluptatum eligendi omnis, nam et ipsam neque dignissimos tenetur!</p>
+    <p>Nostrum accusantium doloremque magni ex, quam dolor at enim quod, labore velit iusto. Voluptate perferendis vitae ullam, expedita sed, quam nam unde laborum veniam tempora atque neque quis molestiae nobis.</p>
+    
+    <div id="btns">
+        <button data-tema="default">Tema Padrão</button>
+        <button data-tema="colorful">Tema Colorido</button>
+        <button data-tema="dark">Tema Escuro</button>
+    </div>
+    <script>
+        const stylesheet = document.querySelector('[rel="stylesheet"]');
+        const btns = document.getElementById('btns');
+        btns.addEventListener('click', function(e){
+            const btn = e.target;
+            const tema = btn.dataset.tema;
+            stylesheet.setAttribute('href', `${tema}.css`);
+            });
+    </script>
+</body>
+</html>
